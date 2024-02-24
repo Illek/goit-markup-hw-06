@@ -289,8 +289,7 @@ img {
 .footer {
   background-color: #2e2f42;
   padding-top: 96px;
-  padding-bottom: 96;
-  height: 664px;
+  padding-bottom: 96px;
 }
 
 .footer-logo {
@@ -316,8 +315,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
-  margin-bottom: 72px;
+  width: 288px;
+  align-self: start;
 }
 
 .footer-subscribe {
@@ -325,7 +324,6 @@ img {
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
-  padding-top: 72px;
 }
 
 .subscribe-title {
@@ -546,17 +544,9 @@ img {
 
 /* Icons footer */
 
-.footer-blocks {
-  display: flex;
-  align-items: baseline;
-  flex-direction: column;
-}
-
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  width: 264px;
   align-items: center;
 }
 
@@ -719,6 +709,13 @@ img {
 
   .mobile-current {
     color: #404bbf;
+  }
+
+  .footer-blocks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 72px;
   }
 }
 
@@ -930,6 +927,10 @@ img {
     display: none;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
   .modal-close-btn {
     display: none;
   }
@@ -1062,29 +1063,27 @@ img {
     width: 356px;
   }
   .footer {
-    height: 456px;
     display: flex;
-    padding: 96px 108px 96px 108px;
+    padding: 96px 0;
   }
 
   .footer-container {
     align-items: start;
     padding: 0;
-    margin: 0 24px 0 0;
   }
 
   .footer-blocks {
-    max-width: 768px;
-    height: 270px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 528px;
+    gap: 72px 24px;
   }
 
   .footer-text {
+    width: 264px;
     margin: 0;
   }
 
@@ -1235,7 +1234,6 @@ img {
 
   .footer {
     padding: 100px 0;
-    height: 312px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1259,10 +1257,6 @@ img {
     margin-right: 120px;
   }
 
-  .footer-text {
-    margin: 0 120px 0 0;
-  }
-
   .sm-footer-title {
     align-self: start;
   }
@@ -1275,5 +1269,9 @@ img {
     display: flex;
     flex-direction: column;
     margin-right: 80px;
+  }
+
+  .footer-text {
+    width: 264px;
   }
 }
