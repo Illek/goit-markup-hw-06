@@ -1,14 +1,23 @@
-// Получаем ссылки на кнопки открытия и закрытия модального окна
 var openModalBtn = document.getElementById("open-modal-btn");
 var closeModalBtn = document.getElementById("close-modal-btn");
 var backdrop = document.querySelector(".backdrop");
 
-// Добавляем обработчик события для кнопки открытия модального окна
 openModalBtn.addEventListener("click", function () {
   backdrop.classList.add("is-open");
 });
 
-// Добавляем обработчик события для кнопки закрытия модального окна
+// Close out of modal window
+
 closeModalBtn.addEventListener("click", function () {
   backdrop.classList.remove("is-open");
+});
+
+closeModalBtn.addEventListener("click", function () {
+  backdrop.classList.remove("is-open");
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target === backdrop) {
+    backdrop.classList.remove("is-open");
+  }
 });
