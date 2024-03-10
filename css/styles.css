@@ -8,6 +8,7 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+  outline-color: #4d5ae5;
 }
 
 .container {
@@ -982,6 +983,8 @@ img {
 
   .modal {
     width: auto;
+    min-width: 408px;
+    padding: 72px 24px 24px 24px;
   }
 
   .check-label {
