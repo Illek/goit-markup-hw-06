@@ -68,7 +68,7 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="open-menu-btn">
+        <button type="button" class="open-menu-btn" id="open-mob-menu">
           <svg width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -80,7 +80,9 @@
       <section class="main-hero section">
         <div class="container hero-container">
           <h1 class="main-hero-title">Effective Solutions for Your Business</h1>
-          <button class="main-hero-btn" type="button">Order Service</button>
+          <button class="main-hero-btn" type="button" id="open-modal-btn">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Секция 2 -->
@@ -648,7 +650,7 @@
     <!-- --- backdrop & modal window --- -->
     <div class="backdrop">
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" id="close-modal-btn">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -711,8 +713,10 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="policy-link"> Privacy Policy</a></label
+              <span>
+                I accept the terms and conditions of the
+                <a href="" class="policy-link"> Privacy Policy</a>
+              </span></label
             >
           </div>
           <button type="submit" class="modal-btn">Send</button>
@@ -721,7 +725,7 @@
       <!-- --- mobile menu --- -->
     </div>
     <div class="mobile-menu">
-      <button type="button" class="modal-close-btn">
+      <button type="button" class="modal-close-btn-mob" id="mob-close">
         <svg class="modal-close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -782,5 +786,7 @@
         </li>
       </ul>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
